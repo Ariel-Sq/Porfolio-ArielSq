@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi&family=Shadows+Into+Light&display=swap');
+
+.headerCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navList {
+    display: flex;
+    margin-right: 30px;
+}
+
+.tittle {
+    color: white;
+    font-family: 'Shadows Into Light';
+    font-size: 50px;
+    margin-left: 16px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+.logoRedes {
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    width: 32px;
+    margin: 15px;
+    /*filter: brightness(100%);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    background-color: transparent;*/
+    transition: transform 0.3s ease;
+
+}
+
+.logoRedes:hover {
+    transform: scale(1.2);
+}
+
+.logoRedesC {
+    display: flex;
+    flex-direction: row;
+    height: 28px;
+    width: 28px;
+    margin: 15px;
+    /*filter: brightness(100%);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;*/
+    transition: transform 0.3s ease;
+}
+
+.logoRedesC:hover {
+    transform: scale(1.2);
+}
+
+hr {
+    filter: brightness(100%);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
