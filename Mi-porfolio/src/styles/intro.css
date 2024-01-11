@@ -20,7 +20,7 @@
     height: 300px;
     border-radius: 50%;
     margin-top: 25%;
-    border: 3px solid whitesmoke;
+    border: 3px solid #37c23e;
 }
 
 .intro-text {
@@ -31,4 +31,7 @@
     font-size: 24px;
     width: 840px;
     margin-top: 25%;
+    filter: brightness(95%);
+    text-shadow: 0 0 7px #37c23e, 0 0 8px #37c23e;
+    padding: 10px;
 }
