@@ -1,0 +1,31 @@
+.list-redes {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.logo-redes {
+    height: 28px;
+    width: 28px;
+    margin: 10px;
+}
+
+.logo-redes:hover {
+    filter: brightness(100%);
+    transition: transform 0.5s ease;
+    transform: scale(1.2);
+    box-shadow:inset 0 0 10px #37c23e, 0 0 20px #37c23e, 0 0 30px #37c23e;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 360px) {
+    .list-redes{
+        width: 164px;
+    }
+    .logo-redes {
+        height: 24px;
+        width: 24px;
+    }
+}
