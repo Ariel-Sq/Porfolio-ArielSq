@@ -1,3 +1,5 @@
+import "../styles/navSections.css";
+
 const sections = [
   {
     id: "inicio",
@@ -23,16 +25,10 @@ const sections = [
 
 export const NavSections = () => {
   return (
-    <nav>
+    <nav className="nav-cont">
       {sections.map((section) => {
         return (
-          <a
-            style={{
-              marginLeft: 10,
-            }}
-            key={section.id}
-            href={section.link}
-          >
+          <a className="opcion-menu" key={section.id} href={section.link}>
             {section.label}
           </a>
         );

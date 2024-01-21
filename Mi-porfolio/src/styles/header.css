@@ -1,21 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi&family=Shadows+Into+Light&display=swap');
 
 .headerCont {
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    max-width: 100%;
-    height: 100%;
+    margin: 0 20px 20px 0;
 }
 
 .tittle {
     color: white;
     font-family: 'Shadows Into Light';
     font-size: 50px;
-    margin-left: 16px;
-    margin-bottom: 1px;
-    margin-top: 1px;
+    margin-left: 20px;
 }
 
 

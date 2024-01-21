@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+.nav-cont {
+    margin-left: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.opcion-menu {
+    padding: 20px;
+    color: #4BDF00;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.opcion-menu:hover {
+    color: gainsboro;
+
+}
