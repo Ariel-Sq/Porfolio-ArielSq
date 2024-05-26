@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+.section-cards {
+    height: 50vw;
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    color: #4BDF00;
+    text-align: center;
+    font-family: 'Shadows Into Light';
+    font-size: 50px;
+}
+
+.description-bootscamp {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    max-width: 840px;
+    filter: brightness(100%);
+    text-shadow: 5px 5px 10px #4BDF00;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.contenedor-videos {
+    margin-top: 20px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+iframe {
+    margin: 10px;
+    border: solid 1px #4BDF00;
+}
+
+.diploma {
+    margin-left: 24px;
+}

@@ -1,25 +1,21 @@
 import "../styles/navSections.css";
+import { Link } from "react-scroll";
 
 const sections = [
   {
     id: "inicio",
     label: "Inicio",
-    link: "#",
+    link: "inicio",
   },
   {
-    id: "educacion",
-    label: "Educación",
-    link: "#",
+    id: "cursos",
+    label: "Cursos",
+    link: "cursos",
   },
   {
     id: "proyectos",
     label: "Proyectos",
-    link: "#",
-  },
-  {
-    id: "experiencia",
-    label: "Experiencia",
-    link: "#",
+    link: "proyectos",
   },
 ];
 
@@ -28,9 +24,15 @@ export const NavSections = () => {
     <nav className="nav-cont">
       {sections.map((section) => {
         return (
-          <a className="opcion-menu" key={section.id} href={section.link}>
+          <Link
+            className="opcion-menu"
+            key={section.id}
+            to={section.link}
+            smooth={true}
+            duration={500}
+          >
             {section.label}
-          </a>
+          </Link>
         );
       })}
     </nav>

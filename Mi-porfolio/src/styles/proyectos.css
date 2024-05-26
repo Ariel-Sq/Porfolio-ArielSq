@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+
+.proyectos-Cont {
+    height: 50vw;
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    color: #4BDF00;
+    text-align: center;
+    font-family: 'Shadows Into Light';
+    font-size: 50px;
+}
+
+.link {
+    color: #4BDF00;
+    text-decoration: none;
+}
+
+.proyect-text {
+    font-family: 'Nunito', sans-serif;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    max-width: 840px;
+    filter: brightness(100%);
+    text-shadow: 5px 5px 10px #4BDF00;
+    padding: 10px;
+}
+
+.card-links-cont {
+    display: flex;
+    flex-direction:row;
+    margin: 100px;
+}
+
+.card {
+    border: 1px solid #4BDF00;
+    height: 260px;
+    width: 248px;
+    margin: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .proyect-text {
+        font-size: 18px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+        margin-top: 15%; /* Ajusta el margen superior */
+    }
+
+    .proyectos-Cont  {
+        height: 700px;
+    }
+}
