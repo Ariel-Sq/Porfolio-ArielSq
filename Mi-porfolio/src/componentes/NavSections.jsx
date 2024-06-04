@@ -3,9 +3,9 @@ import { Link } from "react-scroll";
 
 const sections = [
   {
-    id: "inicio",
-    label: "Inicio",
-    link: "inicio",
+    id: "introCont",
+    label: "Home",
+    link: "introCont",
   },
   {
     id: "cursos",
