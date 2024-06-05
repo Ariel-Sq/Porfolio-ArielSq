@@ -8,25 +8,129 @@
     width: 100%;
     height: 16vh;
     background-color: black;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .tittle {
     color: white;
-    font-family: 'Shadows Into Light';
+    font-family: 'Shadows Into Light', cursive;
     font-size: 50px;
     margin-left: 20px;
 }
 
+.menuIcon {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1100; /* Ensure the menu icon is above the fullscreen menu */
+}
+
+.fullScreenMenu {
+    display: none; /* Hide the menu by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: green;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.fullScreenMenu.active {
+    display: flex;
+}
+
+.fullScreenMenu .navListSections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.fullScreenMenu .navListRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto; /* Push to the bottom of the screen */
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+.navListSections, .navListRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}
+
+.navListRedes {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.navSections a, 
+.navRedes a {
+    color: green;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.logo-redes {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+}
+
 @media screen and (max-width: 768px) {
+    .menuIcon {
+        display: block;
+    }
+
     .headerCont {
-        max-height: 16vw;
+        height: auto;
     }
 
     .tittle {
         font-size: 24px;
     }
 
-    .navList {
-        margin: 2px;
+    .navListSections,
+    .navListRedes {
+        display: none; /* Hide nav items by default on small screens */
+    }
+
+    .fullScreenMenu.active .navListSections,
+    .fullScreenMenu.active .navListRedes {
+        display: flex; /* Show nav items when menu is active */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navSections a, 
+    .navRedes a {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .fullScreenMenu.active .navListSections {
+        display: flex; /* Show nav items when menu is active */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fullScreenMenu.active .navListRedes {
+        display: flex; /* Show nav items when menu is active */
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto; /* Push to the bottom of the screen */
+        padding-bottom: 20px; /* Adjust as needed */
     }
 }

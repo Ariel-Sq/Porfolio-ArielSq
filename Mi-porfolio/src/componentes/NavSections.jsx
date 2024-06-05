@@ -8,14 +8,14 @@ const sections = [
     link: "introCont",
   },
   {
-    id: "cursos",
-    label: "Cursos",
-    link: "cursos",
-  },
-  {
     id: "proyectos",
     label: "Proyectos",
     link: "proyectos",
+  },
+  {
+    id: "cursos",
+    label: "Cursos",
+    link: "cursos",
   },
 ];
 
