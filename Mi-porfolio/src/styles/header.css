@@ -24,15 +24,15 @@
     color: white;
     font-size: 30px;
     cursor: pointer;
-    z-index: 1100; /* Ensure the menu icon is above the fullscreen menu */
+    z-index: 1100;
 }
 
 .fullScreenMenu {
-    display: none; /* Hide the menu by default */
+    display: none;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: 100%;
     background-color: black;
     color: green;
@@ -40,18 +40,22 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
 }
 
 .fullScreenMenu.active {
     display: flex;
+    transform: translateX(0);
+    flex-direction: column;
 }
 
 .fullScreenMenu .navListSections {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
 }
 
 .fullScreenMenu .navListRedes {
@@ -59,8 +63,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: auto; /* Push to the bottom of the screen */
-    padding-bottom: 20px; /* Adjust as needed */
+    margin-top: auto;
+    padding-bottom: 20px;
 }
 
 .navListSections, .navListRedes {
@@ -75,7 +79,7 @@
     padding-bottom: 0;
 }
 
-.navSections a, 
+.navSections a,
 .navRedes a {
     color: green;
     text-decoration: none;
@@ -84,8 +88,8 @@
 }
 
 .logo-redes {
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
+    width: 30px;
+    height: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -94,7 +98,7 @@
     }
 
     .headerCont {
-        height: auto;
+        height: 12vh;
     }
 
     .tittle {
@@ -103,34 +107,34 @@
 
     .navListSections,
     .navListRedes {
-        display: none; /* Hide nav items by default on small screens */
+        display: none;
     }
 
-    .fullScreenMenu.active .navListSections,
     .fullScreenMenu.active .navListRedes {
-        display: flex; /* Show nav items when menu is active */
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .navSections a, 
+    .navSections a,
     .navRedes a {
         font-size: 20px;
         margin: 10px 0;
     }
 
     .fullScreenMenu.active .navListSections {
-        display: flex; /* Show nav items when menu is active */
+        display: flex;
         flex-direction: column;
         align-items: center;
+        height: 80%;
     }
 
     .fullScreenMenu.active .navListRedes {
-        display: flex; /* Show nav items when menu is active */
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-top: auto; /* Push to the bottom of the screen */
-        padding-bottom: 20px; /* Adjust as needed */
+        margin-top: auto;
+        padding-bottom: 20px;
     }
 }
